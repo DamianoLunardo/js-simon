@@ -19,8 +19,8 @@ alert("Ecco i 5 numeri casuali: " + generatedNumbers);
 
 
 //aggiungo il timer di 30 secondi
-//let timeLeft = 30;
-let timeLeft = 5; // per test più veloce
+let timeLeft = 30;
+//let timeLeft = 5; // per test più veloce
 let elem = document.getElementById('Timer');
 let timerId = setInterval(countdown, 1000);
 
@@ -51,7 +51,6 @@ function getUserInput() {
     };
 
     // ora devo stampare i risultati e confrontarli per poterli inserire
-    let finalMessage = "Corretto" + equalNumbers.length + " numeri su 5";
     if (equalNumbers.length > 0) {
         finalMessage = "I numeri giusti sono: " + equalNumbers;
     } else {
